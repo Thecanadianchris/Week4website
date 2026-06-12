@@ -14,20 +14,14 @@ function onClickSaveNote() {
   var taskText = toDo.value;
 
 
-
-var taskList = document.getElementById("taskList");
-
-
-
-
-
-  var newTaskItem = document.createElement("li");
-
-
-  
-
+ if (taskText === "") {
+    document.getElementById("voidentry").style.display = "block";
+  } else {
+    document.getElementById("voidentry").style.display = "none";
+    var taskList = document.getElementById("taskList");
+    var newTaskItem = document.createElement("li");
     newTaskItem.textContent = taskText;
-
-
-  taskList.appendChild(newTaskItem);
+    taskList.appendChild(newTaskItem);
+  }
 }
+
