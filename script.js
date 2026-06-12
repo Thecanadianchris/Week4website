@@ -20,8 +20,28 @@ function onClickSaveNote() {
     document.getElementById("voidentry").style.display = "none";
     var taskList = document.getElementById("taskList");
     var newTaskItem = document.createElement("li");
-    newTaskItem.textContent = taskText;
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    newTaskItem.appendChild(checkbox);
+    var taskLabel = document.createTextNode(taskText);
+    newTaskItem.appendChild(taskLabel);
     taskList.appendChild(newTaskItem);
+    toDo.value = "";
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
