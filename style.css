@@ -56,6 +56,23 @@ html {
     border-radius: 8px;
 }
 
+#taskList li {
+    padding: 10px;
+    border-bottom: 10px;
+}
+
+
+#taskList li button {
+    margin-left: 10px;
+}
+
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+
+}
+
+
 button {
     padding: 10px 20px;
     background-color: #2d3e50;
@@ -64,6 +81,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 #voidentry {
     display: none;

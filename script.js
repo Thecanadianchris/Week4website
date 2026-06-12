@@ -25,6 +25,11 @@ function onClickSaveNote() {
     newTaskItem.appendChild(checkbox);
     var taskLabel = document.createTextNode(taskText);
     newTaskItem.appendChild(taskLabel);
+    var dateAdded = new Date().toLocaleString();
+    var dateLabel = document.createElement("span");
+    dateLabel.textContent = " - " + dateAdded;
+    dateLabel.style.marginLeft = "10px";
+    newTaskItem.appendChild(dateLabel);
     var editButton = document.createElement("button");
     editButton.textContent = "Edit Note";
     editButton.addEventListener("click", function() {
