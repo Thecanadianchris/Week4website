@@ -25,23 +25,17 @@ function onClickSaveNote() {
     newTaskItem.appendChild(checkbox);
     var taskLabel = document.createTextNode(taskText);
     newTaskItem.appendChild(taskLabel);
+    var editButton = document.createElement("button");
+    editButton.textContent = "Edit Note";
+    editButton.addEventListener("click", function() {
+      var newText = prompt("Edit your task:", taskText);
+      if (newText !== null && newText !== "") {
+        taskLabel.textContent = newText;
+      }
+    });
+    newTaskItem.appendChild(editButton);
     taskList.appendChild(newTaskItem);
     toDo.value = "";
-
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
