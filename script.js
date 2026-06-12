@@ -1,39 +1,33 @@
+var toDo = document.getElementById("toDo");
 
 
+var saveNote = document.getElementById("savenote");
 
 
-
-
-var searchTerm = document.getElementById("searchTerm");
-
-
-var searchButton = document.getElementById("searchButton");
-
-
-searchButton.addEventListener("click", onClickSearhButton);
+saveNote.addEventListener("click", onClickSaveNote);
 
 
   
-function onClickSearhButton() {
+function onClickSaveNote() {
 
 
-  var searchValue = searchTerm.value;
-
-
-
-var searchesDiv = document.getElementById("searches");
+  var taskText = toDo.value;
 
 
 
+var taskList = document.getElementById("taskList");
 
 
-  var newSearchItem = document.createElement("li");
+
+
+
+  var newTaskItem = document.createElement("li");
 
 
   
 
-    newSearchItem.textContent = searchValue;
+    newTaskItem.textContent = taskText;
 
 
-  searchesDiv.appendChild(newSearchItem);
+  taskList.appendChild(newTaskItem);
 }

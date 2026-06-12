@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Notes Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,25 +13,25 @@
 
     <div class="container">
         <div class="sidebar">
-            <h2>Dashboard</h2>
+            <h2>Notes Dashboard</h2>
             <ul>
-                <li>Overview</li>
-                <li>Analytics</li>
-                <li>Reports</li>
-                <li>Settings</li>
+                <li>Notes Overview</li>
+                <li>Notes Analytics</li>
+                <li>Notes Reports</li>
+                <li>Notes Settings</li>
                 <li>Logout</li>
             </ul>
         </div>
         <div class="main-content">
             <h1 id="page-title">Dashboard Overview</h1>
             <div class="widget">
-                <h2>Search for something</h2>
-                <input type="text" id="searchTerm" placeholder="Enter a search term" />
-                <button id="searchButton">Search</button>
+                <h2>Note Entry</h2>
+                <input type="text" id="toDo" placeholder="Enter a task" />
+                <button id="savenote">Save Note</button>
             </div>
             <div class="widget">
-                <h2>Recent Searches</h2>
-                <ul id="searches">
+                <h2>Recent Notes</h2>
+                <ul id="taskList">
                 </ul>
             </div>
             
